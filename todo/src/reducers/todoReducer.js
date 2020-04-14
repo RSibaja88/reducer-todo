@@ -1,34 +1,30 @@
-export const initalTodoState = {
-    item: 'Learn about Reducers',
-    completed: false,
-    id: Math.random()
-};
+export const initialState = [
+        {
+        item: 'Learn about Reducers',
+        completed: false,
+        id: Date.now()
+        }
+    ];
 
-export const todoReducer = (state, action) => {
+export function todoReducer(state, action) {
     switch(action.type) {
-        case "ADD_TASK_ITEM":
-            return {
+        case "ADD_TODO_ITEM":
+            return [
                 ...state,
-                item: action.payload, completed: false, id: Math.random()
-            };
+                {item: action.payload,
+                completed: false,
+                id: Date.now()}
+            ];
         case "TOGGLE_COMPLETE":
-            return {
-                ...state.map(item => {
-                    if(item.id === action.payload) {
-                        return {
-                            ...item,
-                            completed: !item.completed
-                        };
-                    }
-                    return item;
+            return state.map((item) => {
+                    return item.id === action.payload ?
+                    {...item, completed: !item.completed} :
+                    item
                 })
-            };
+            
         case "CLEAR_COMPLETE":
-            return {
-                ...state.filter(item => {
-                    return !item.completed;
-                })
-            };
+            return state.filter((item) => !item.completed)
+                    
             default:
             return state;
     };
