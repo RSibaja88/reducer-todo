@@ -1,0 +1,41 @@
+.addNew {
+    font-family: 'Baloo Paaji 2', cursive;
+    color: aliceblue;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: -4px 3px 4px  rgb(52, 77, 77);
+    padding: 15px;
+}
+.inputBar {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    height: 35px;
+    width: 60%;
+    margin-bottom: 15px;
+}
+.buttonBundle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+button {
+    font-family: 'Lobster', cursive;
+    font-size: 1.75em;
+    color: rgb(10, 77, 62);
+    background-color:aliceblue;
+    height: 60px;
+    width: 210px;
+    border-radius: 5.5px;
+    margin-left: 3%;
+    margin-right: 3%;
+    -webkit-border-radius: 5.5px;
+    -moz-border-radius: 5.5px;
+    -ms-border-radius: 5.5px;
+    -o-border-radius: 5.5px;
+    box-shadow: none;
+}
