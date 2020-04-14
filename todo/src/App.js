@@ -25,7 +25,8 @@ function App() {
   // };
 
   return (
-    <div className="App">
+    <section className="App">
+      <div className="title">Your To-Do List!</div>
       <div className="tagline">Click on a todo to mark as COMPLETE!<br />
       Click a complete todo to CLEAR it from the list!</div>
       <TodoList
@@ -34,7 +35,7 @@ function App() {
         dispatch={dispatch}
         />
       
-    </div>
+    </section>
   );
 }
 

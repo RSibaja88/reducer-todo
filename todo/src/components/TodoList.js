@@ -3,7 +3,6 @@ import { Todo } from "./Todo";
 import { TodoForm } from "./TodoForm";
 import { todoReducer, initialState } from "../reducers/todoReducer";
 
-// import "./TodoList.css";
 
 export function TodoList() {
     const [state, dispatch] = useReducer(todoReducer, initialState);

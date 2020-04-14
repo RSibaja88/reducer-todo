@@ -1,6 +1,6 @@
 export const initialState = [
         {
-        item: 'Learn about Reducers',
+        item: 'Learn About Reducers',
         completed: false,
         id: Date.now()
         }

@@ -9,11 +9,11 @@ export function Todo({dispatch, item}) {
 
     return (
         <div>
-            <h1 className={item.completed ? 'complete' : ''}
+            <h3 className={item.completed ? 'complete' : ''}
             onClick={(e) => {
                 e.preventDefault()
                 toggleComplete(item.id)
-            }}> {item.item}</h1>
+            }}> {item.item}</h3>
         </div>
     );
 };

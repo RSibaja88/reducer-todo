@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import "./TodoForm.css";
+import "./TodoForm.css";
 
 export function TodoForm({dispatch}) { 
     const [newTodo, setTodo] = useState("");
@@ -27,7 +27,7 @@ export function TodoForm({dispatch}) {
         <div className="formContainer">
             <form onSubmit={handleSubmit}>
                 <div className="topInput">
-                    <label className="addNew">Add a New Todo!</label>
+                    <label className="addNew">Add a Task to Your List!</label><br/>
                     <input className="inputBar"
                         onChange={handleChange}
                         type="text"
@@ -35,8 +35,8 @@ export function TodoForm({dispatch}) {
                         value={newTodo}
                 /></div>
                 <div className="buttonBundle">
-                    <button>Confirm Todo</button>
-                    <button onClick={clearComplete}>Clear Completed Todos</button>
+                    <button>Add</button>
+                    <button onClick={clearComplete}>Clear Completed</button>
                 </div>
             </form>
         </div>

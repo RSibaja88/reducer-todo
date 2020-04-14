@@ -1,8 +1,14 @@
-h1 {
+h3 {
     text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    color: aliceblue;
+    font-size: 2.75em;
+    font-weight: 400;
+    text-shadow: -4px 3px 4px  rgb(37, 58, 58);
 
 }
 
 .complete {
     text-decoration: line-through;
+    font-style: italic;
 }
